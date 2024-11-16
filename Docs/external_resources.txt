@@ -1,0 +1,3 @@
+# External Resources and Downloads
+- Sample Disk Image: [Download block.dd](https://example.com/block.dd)
+- Reference Documentation: [MBR Structure Guide](https://en.wikipedia.org/wiki/Master_boot_record)

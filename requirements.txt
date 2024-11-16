@@ -1,0 +1,2 @@
+# List of dependencies (all are standard in this case)
+Python>=3.12.7

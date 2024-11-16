@@ -1,8 +1,0 @@
-2024-11-09 07:25:08,677 - INFO - MBR read successfully.
-2024-11-09 07:25:08,677 - INFO - Partition entry parsed successfully.
-2024-11-09 07:25:31,201 - INFO - MBR read successfully.
-2024-11-09 07:25:31,201 - INFO - Partition entry parsed successfully.
-2024-11-09 07:26:17,952 - INFO - MBR read successfully.
-2024-11-09 07:26:17,953 - INFO - Partition entry parsed successfully.
-2024-11-09 08:23:26,977 - INFO - MBR read successfully.
-2024-11-09 08:23:26,979 - INFO - Partition entry parsed successfully.

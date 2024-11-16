@@ -1,36 +1,35 @@
 # mbr_parser.py
 # Author: William Richmond
-# Date: 2024-11-09
+# Date: 2024-11-16
 # Class: CYBR-260-45
 # Assignment: MBR Parsing
-# Description: Contains the MBRParser class to parse the Master Boot Record (MBR) from a .dd file,
-# with added logging and enhanced error handling.
+# Description: Contains the MBRParser class to parse the Master Boot Record (MBR) from a .dd file.
+# Revised on: 2024-11-16
 
 import logging
 import os
 
 # Configure logging
 logging.basicConfig(
-    filename='log.txt',
+    filename='logs/log.txt',
     level=logging.DEBUG,
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
 class MBRParser:
-    """Class to parse the Master Boot Record (MBR) from a .dd file."""
+    # Class to parse the Master Boot Record (MBR) from a .dd file.
 
     # function: __init__
     # purpose: Initialize the MBRParser with the filename of the .dd file
     # inputs: filename (str)
     # returns: None
     def __init__(self, filename):
+        if not os.path.isfile(filename):
+            logging.error(f"Invalid file path: {filename}")
+            raise FileNotFoundError(f"The file '{filename}' does not exist.")
         self.filename = filename
         self.mbr = None
-
-        # Check if the file exists
-        if not os.path.isfile(self.filename):
-            logging.error(f"File not found: {self.filename}")
-            raise FileNotFoundError(f"The file '{self.filename}' does not exist.")
+        logging.info(f"MBRParser initialized with file: {filename}")
 
     # function: read_mbr
     # purpose: Reads the first 512 bytes of the .dd file (the MBR)
@@ -45,43 +44,33 @@ class MBRParser:
                     raise ValueError("MBR data is incomplete.")
             logging.info("MBR read successfully.")
         except FileNotFoundError:
-            logging.critical(f"File not found: {self.filename}")
+            logging.error(f"File not found: {self.filename}")
             raise
         except PermissionError:
-            logging.critical(f"Permission denied when accessing: {self.filename}")
+            logging.error(f"Permission denied when accessing: {self.filename}")
+            raise
+        except OSError as e:
+            logging.error(f"OS error while reading the file: {e}")
             raise
         except Exception as e:
             logging.exception(f"Unexpected error while reading MBR: {e}")
             raise
 
-    # function: parse_partition_entry
-    # purpose: Parses the first partition entry located at offset 0x1BE
+    # function: extract_first_partition
+    # purpose: Extracts the first partition entry from the MBR
     # inputs: None
-    # returns: tuple (status_byte, partition_type, first_sector_address)
-    def parse_partition_entry(self):
+    # returns: partition_entry (bytes)
+    def extract_first_partition(self):
         try:
             if not self.mbr:
                 logging.error("MBR data not loaded. Call read_mbr() first.")
                 raise ValueError("MBR data not loaded. Call read_mbr() first.")
-
-            partition_entry_offset = 0x1BE
-
-            # Extract status byte (1 byte)
-            status_byte = self.mbr[partition_entry_offset]
-
-            # Extract partition type (1 byte at 1BE + 4)
-            partition_type = self.mbr[partition_entry_offset + 4]
-
-            # Extract the address of the first sector (4 bytes at 1BE + 8)
-            first_sector_address = int.from_bytes(self.mbr[partition_entry_offset + 8:partition_entry_offset + 12], 'little')
-
-            logging.info("Partition entry parsed successfully.")
-            return status_byte, partition_type, first_sector_address
-
+            partition_entry = self.mbr[0x1BE:0x1CE]
+            logging.info("First partition entry extracted successfully.")
+            return partition_entry
         except IndexError:
-            logging.error("Error parsing partition entry: Data index out of range.")
+            logging.error("Error extracting partition entry: Data index out of range.")
             raise
         except Exception as e:
-            logging.exception(f"Unexpected error while parsing partition entry: {e}")
+            logging.exception(f"Unexpected error while extracting partition entry: {e}")
             raise
-

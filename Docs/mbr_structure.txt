@@ -1,0 +1,29 @@
++-----------------------------------+
+| Boot Code (0–445 bytes)           |
++-----------------------------------+
+| Disk Signature (440–443 bytes)    |
++-----------------------------------+
+| Reserved (444–445 bytes)          |
++-----------------------------------+
+| Partition Table (446–509 bytes)   |
+|   - Entry 1 (446–461 bytes)       |
+|       - Status Byte (446)         |
+|       - CHS Address (447–449)     |
+|       - Partition Type (450)      |
+|       - CHS End Address (451–453) |
+|       - LBA Start (454–457)       |
+|       - Total Sectors (458–461)   |
+|   - Entry 2 (462–477 bytes)       |
+|   - Entry 3 (478–493 bytes)       |
+|   - Entry 4 (494–509 bytes)       |
++-----------------------------------+
+| Boot Signature (510–511 bytes)    |
++-----------------------------------+
+
+Note:
+- The **first partition entry** starts at offset `0x1BE` (446) and ends at `0x1CD` (461).
+- We extract the first partition entry (16 bytes) from `0x1BE` to `0x1CD` in our program.
+- The **Status Byte** (0x80 = Active, 0x00 = Inactive).
+- The **Partition Type** indicates the filesystem (e.g., 0x83 = Linux).
+- The **LBA Start** is the starting address of the partition in Logical Block Addressing (LBA).
+

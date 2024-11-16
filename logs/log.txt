@@ -1,0 +1,97 @@
+2024-11-09 07:25:08,677 - INFO - MBR read successfully.
+2024-11-09 07:25:08,677 - INFO - Partition entry parsed successfully.
+2024-11-09 07:25:31,201 - INFO - MBR read successfully.
+2024-11-09 07:25:31,201 - INFO - Partition entry parsed successfully.
+2024-11-09 07:26:17,952 - INFO - MBR read successfully.
+2024-11-09 07:26:17,953 - INFO - Partition entry parsed successfully.
+2024-11-09 08:23:26,977 - INFO - MBR read successfully.
+2024-11-09 08:23:26,979 - INFO - Partition entry parsed successfully.
+2024-11-16 12:20:02,204 - INFO - MBR read successfully.
+2024-11-16 12:20:02,204 - INFO - First partition entry extracted successfully.
+2024-11-16 12:20:02,205 - INFO - Partition data sent to server successfully.
+2024-11-16 12:41:40,178 - INFO - MBR read successfully.
+2024-11-16 12:41:40,181 - INFO - First partition entry extracted successfully.
+2024-11-16 13:05:59,178 - INFO - Server started in a separate thread.
+2024-11-16 13:05:59,179 - INFO - Server listening on 127.0.0.1:65432...
+2024-11-16 13:06:00,178 - INFO - MBR read successfully.
+2024-11-16 13:06:00,178 - INFO - First partition entry extracted successfully.
+2024-11-16 13:06:00,178 - INFO - Partition entry extracted successfully.
+2024-11-16 13:06:00,179 - INFO - Partition data sent to server successfully.
+2024-11-16 13:06:00,179 - INFO - Connection established with ('127.0.0.1', 52708)
+2024-11-16 13:06:00,179 - INFO - Drive Status: Active
+2024-11-16 13:06:00,179 - INFO - Partition Type: 0x83
+2024-11-16 13:06:00,179 - INFO - Starting Address (LBA): 2048
+2024-11-16 13:06:00,179 - INFO - Partition data sent to the server successfully.
+2024-11-16 13:11:31,545 - INFO - Server started in a separate thread.
+2024-11-16 13:11:31,546 - INFO - Server listening on 127.0.0.1:65432...
+2024-11-16 13:11:32,546 - INFO - MBRParser initialized with file: block.dd
+2024-11-16 13:11:32,546 - INFO - MBR read successfully.
+2024-11-16 13:11:32,546 - INFO - First partition entry extracted successfully.
+2024-11-16 13:11:32,546 - INFO - Partition entry extracted successfully.
+2024-11-16 13:11:32,546 - INFO - Connection established with ('127.0.0.1', 59529)
+2024-11-16 13:11:32,556 - INFO - Partition data sent to server successfully.
+2024-11-16 13:11:32,556 - INFO - Drive Status: Active
+2024-11-16 13:11:32,556 - INFO - Partition Type: 0x83
+2024-11-16 13:11:32,556 - INFO - Starting Address (LBA): 2048
+2024-11-16 13:11:32,556 - INFO - Partition data sent to the server successfully.
+2024-11-16 13:11:38,745 - INFO - MBRParser initialized with file: block.dd
+2024-11-16 13:11:38,745 - INFO - MBR read successfully.
+2024-11-16 13:11:38,746 - INFO - First partition entry extracted successfully.
+2024-11-16 13:16:57,514 - INFO - MBRParser initialized with file: block.dd
+2024-11-16 13:16:57,514 - INFO - MBR read successfully.
+2024-11-16 13:16:57,514 - INFO - First partition entry extracted successfully.
+2024-11-16 13:16:59,573 - ERROR - Connection refused by the server. Ensure the server is running.
+2024-11-16 13:17:15,467 - INFO - Server started in a separate thread.
+2024-11-16 13:17:15,468 - INFO - Server listening on 127.0.0.1:65432...
+2024-11-16 13:17:16,468 - INFO - MBRParser initialized with file: block.dd
+2024-11-16 13:17:16,468 - INFO - MBR read successfully.
+2024-11-16 13:17:16,468 - INFO - First partition entry extracted successfully.
+2024-11-16 13:17:16,468 - INFO - Partition entry extracted successfully.
+2024-11-16 13:17:16,469 - INFO - Connection established with ('127.0.0.1', 54395)
+2024-11-16 13:17:16,491 - INFO - Partition data sent to server successfully.
+2024-11-16 13:17:16,491 - INFO - Drive Status: Active
+2024-11-16 13:17:16,491 - INFO - Partition Type: 0x83
+2024-11-16 13:17:16,491 - INFO - Starting Address (LBA): 2048
+2024-11-16 13:17:16,491 - INFO - Partition data sent to the server successfully.
+2024-11-16 13:18:17,087 - INFO - MBRParser initialized with file: block.dd
+2024-11-16 13:18:17,087 - INFO - MBR read successfully.
+2024-11-16 13:18:17,087 - INFO - First partition entry extracted successfully.
+2024-11-16 13:18:19,119 - ERROR - Connection refused by the server. Ensure the server is running.
+2024-11-16 14:18:51,616 - ERROR - Invalid file path: ../resources/block.dd
+2024-11-16 14:18:51,616 - ERROR - Setup error: The file '../resources/block.dd' does not exist.
+2024-11-16 14:18:51,711 - INFO - Server started in a separate thread.
+2024-11-16 14:18:51,711 - INFO - Server listening on 127.0.0.1:65432...
+2024-11-16 14:18:52,712 - INFO - MBRParser initialized with file: resources/block.dd
+2024-11-16 14:18:52,712 - INFO - MBR read successfully.
+2024-11-16 14:18:52,712 - INFO - First partition entry extracted successfully.
+2024-11-16 14:18:52,712 - INFO - Partition entry extracted successfully.
+2024-11-16 14:18:52,713 - INFO - Partition data sent to server successfully.
+2024-11-16 14:18:52,713 - INFO - Connection established with ('127.0.0.1', 55152)
+2024-11-16 14:18:52,713 - INFO - Partition data sent to the server successfully.
+2024-11-16 14:18:52,713 - INFO - Drive Status: Active
+2024-11-16 14:18:52,713 - INFO - Partition Type: 0x83
+2024-11-16 14:21:34,052 - ERROR - Invalid file path: ../resources/block.dd
+2024-11-16 14:21:34,052 - ERROR - Setup error: The file '../resources/block.dd' does not exist.
+2024-11-16 14:21:52,063 - ERROR - Invalid file path: ../resources/block.dd
+2024-11-16 14:21:52,064 - ERROR - Setup error: The file '../resources/block.dd' does not exist.
+2024-11-16 14:22:48,091 - INFO - MBRParser initialized with file: resources/block.dd
+2024-11-16 14:22:48,092 - INFO - MBR read successfully.
+2024-11-16 14:22:48,092 - INFO - First partition entry extracted successfully.
+2024-11-16 14:23:09,026 - INFO - MBRParser initialized with file: resources/block.dd
+2024-11-16 14:23:09,027 - INFO - MBR read successfully.
+2024-11-16 14:23:09,027 - INFO - First partition entry extracted successfully.
+2024-11-16 14:23:13,611 - INFO - MBRParser initialized with file: resources/block.dd
+2024-11-16 14:23:13,611 - INFO - MBR read successfully.
+2024-11-16 14:23:13,611 - INFO - First partition entry extracted successfully.
+2024-11-16 14:25:48,276 - INFO - Server started in a separate thread.
+2024-11-16 14:25:48,277 - INFO - Server listening on 127.0.0.1:65432...
+2024-11-16 14:25:49,278 - INFO - MBRParser initialized with file: resources/block.dd
+2024-11-16 14:25:49,278 - INFO - MBR read successfully.
+2024-11-16 14:25:49,278 - INFO - First partition entry extracted successfully.
+2024-11-16 14:25:49,278 - INFO - Partition entry extracted successfully.
+2024-11-16 14:25:49,278 - INFO - Connection established with ('127.0.0.1', 54500)
+2024-11-16 14:25:49,302 - INFO - Partition data sent to server successfully.
+2024-11-16 14:25:49,302 - INFO - Drive Status: Active
+2024-11-16 14:25:49,302 - INFO - Partition Type: 0x83
+2024-11-16 14:25:49,302 - INFO - Starting Address (LBA): 2048
+2024-11-16 14:25:49,302 - INFO - Partition data sent to the server successfully.
